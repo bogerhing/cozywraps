@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shop — Cozy Wraps</title>
+  <meta name="description" content="Browse our full collection of premium handcrafted blankets, throws, and quilts."/>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- ══ HEADER ══════════════════════════════════════════════ -->
+<header class="site-header">
+  <div class="container">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="Cozy Wraps Home">
+        <svg class="logo-icon" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="38" height="38" rx="9" fill="#8B5E3C"/>
+          <path d="M7 13 Q19 9 31 13 L31 27 Q19 31 7 27 Z" fill="#F5E6D0" opacity="0.95"/>
+          <path d="M7 17 Q19 13 31 17" stroke="#C4956A" stroke-width="1.4" fill="none"/>
+          <path d="M7 21 Q19 17 31 21" stroke="#C4956A" stroke-width="1.4" fill="none"/>
+          <path d="M7 25 Q19 21 31 25" stroke="#C4956A" stroke-width="1.4" fill="none"/>
+        </svg>
+        <span class="logo-text">Cozy Wraps</span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html"        class="nav-link">Home</a>
+        <a href="shop.html"         class="nav-link">Shop</a>
+        <a href="new-arrivals.html" class="nav-link">New Arrivals</a>
+        <a href="about.html"        class="nav-link">About</a>
+        <a href="contact.html"      class="nav-link">Contact</a>
+      </nav>
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <nav class="mobile-nav" aria-label="Mobile navigation">
+    <a href="index.html"        class="nav-link">Home</a>
+    <a href="shop.html"         class="nav-link">Shop</a>
+    <a href="new-arrivals.html" class="nav-link">New Arrivals</a>
+    <a href="about.html"        class="nav-link">About</a>
+    <a href="contact.html"      class="nav-link">Contact</a>
+  </nav>
+</header>
+
+<main>
+<!-- ══ BANNER ══════════════════════════════════════════════ -->
+<section class="page-banner">
+  <div class="container">
+    <span class="eyebrow">Our Collection</span>
+    <h1>The Full Shop</h1>
+    <p>Handcrafted blankets and throws for every style, season, and sensibility.</p>
+  </div>
+</section>
+
+<!-- ══ SHOP GRID ════════════════════════════════════════════ -->
+<section class="section">
+  <div class="container">
+
+    <div class="filter-bar" role="group" aria-label="Filter products">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="throws">Throws</button>
+      <button class="filter-btn" data-filter="wool">Wool</button>
+      <button class="filter-btn" data-filter="quilts">Quilts</button>
+      <button class="filter-btn" data-filter="sherpa">Sherpa</button>
+      <button class="filter-btn" data-filter="knit">Knit</button>
+    </div>
+
+    <div class="products-grid" id="products-container"></div>
+
+  </div>
+</section>
+
+<!-- ══ QUALITY PROMISE ══════════════════════════════════════ -->
+<section class="section--sm" style="background:var(--parchment);text-align:center;">
+  <div class="container" style="max-width:680px">
+    <span class="eyebrow">Our Promise</span>
+    <h2 style="margin-bottom:14px">Crafted to last a lifetime</h2>
+    <p style="color:var(--sienna);font-size:0.95rem;line-height:1.8;">Every Cozy Wraps piece comes with our quality guarantee. If you're ever unsatisfied with the craftsmanship, we'll make it right. <a href="contact.html" style="color:var(--sienna);font-weight:600;text-decoration:underline;">Get in touch.</a></p>
+  </div>
+</section>
+</main>
+
+<!-- ══ PRODUCT MODAL ════════════════════════════════════════ -->
+<div class="modal-overlay" id="product-modal" role="dialog" aria-modal="true" aria-label="Product details">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeProductModal()" aria-label="Close">✕</button>
+    <div class="modal-body">
+      <div class="modal-image" id="modal-image"></div>
+      <div class="modal-details">
+        <h2 class="modal-product-name" id="modal-name"></h2>
+        <div class="modal-product-price" id="modal-price"></div>
+        <p class="modal-product-desc" id="modal-desc"></p>
+        <div class="modal-product-specs">
+          <div class="spec-row"><span class="spec-label">Material</span><span class="spec-value" id="modal-material"></span></div>
+          <div class="spec-row"><span class="spec-label">Size</span><span class="spec-value" id="modal-size"></span></div>
+          <div class="spec-row"><span class="spec-label">Care</span><span class="spec-value" id="modal-care"></span></div>
+        </div>
+        <div class="modal-actions">
+          <button class="btn btn-primary" onclick="openOrderModal()">Order Now</button>
+          <button class="btn btn-outline" onclick="closeProductModal()">Continue Browsing</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ ORDER MODAL ══════════════════════════════════════════ -->
+<div class="modal-overlay" id="order-modal" role="dialog" aria-modal="true" aria-label="Order status">
+  <div class="modal-box order-popup">
+    <button class="modal-close" onclick="closeOrderModal()" aria-label="Close">✕</button>
+    <div class="order-popup-icon">🛋️</div>
+    <h3>Currently Unavailable</h3>
+    <p>We appreciate your interest! Online ordering is temporarily unavailable while we upgrade our systems. Please <a href="contact.html" style="color:var(--sienna);font-weight:600">contact us</a> directly to place an order — we'd love to help you find the perfect piece.</p>
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+      <a href="contact.html" class="btn btn-primary">Contact Us</a>
+      <button class="btn btn-outline" onclick="closeOrderModal()">Close</button>
+    </div>
+  </div>
+</div>
+
+<!-- ══ FOOTER ═══════════════════════════════════════════════ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <svg class="logo-icon" viewBox="0 0 38 38" fill="none">
+            <rect width="38" height="38" rx="9" fill="#C4956A"/>
+            <path d="M7 13 Q19 9 31 13 L31 27 Q19 31 7 27 Z" fill="#FAF6EF" opacity="0.9"/>
+            <path d="M7 17 Q19 13 31 17" stroke="#8B5E3C" stroke-width="1.4" fill="none"/>
+            <path d="M7 21 Q19 17 31 21" stroke="#8B5E3C" stroke-width="1.4" fill="none"/>
+            <path d="M7 25 Q19 21 31 25" stroke="#8B5E3C" stroke-width="1.4" fill="none"/>
+          </svg>
+          <span class="logo-text">Cozy Wraps</span>
+        </a>
+        <p class="footer-tagline">Premium handcrafted blankets for the home you love. Sourced ethically. Made beautifully.</p>
+        <div class="footer-social">
+          <a href="contact.html" class="social-btn" aria-label="Instagram">IG</a>
+          <a href="contact.html" class="social-btn" aria-label="Facebook">FB</a>
+          <a href="contact.html" class="social-btn" aria-label="Pinterest">PT</a>
+          <a href="contact.html" class="social-btn" aria-label="Twitter">TW</a>
+        </div>
+      </div>
+      <div>
+        <h5 class="footer-col-title">Shop</h5>
+        <ul class="footer-links">
+          <li><a href="shop.html">All Blankets</a></li>
+          <li><a href="new-arrivals.html">New Arrivals</a></li>
+          <li><a href="shop.html">Throws &amp; Wraps</a></li>
+          <li><a href="shop.html">Quilts</a></li>
+          <li><a href="shop.html">Wool Collection</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="footer-col-title">Company</h5>
+        <ul class="footer-links">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">Sustainability</a></li>
+          <li><a href="about.html">Our Artisans</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="footer-col-title">Legal</h5>
+        <ul class="footer-links">
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms &amp; Conditions</a></li>
+          <li><a href="contact.html">Returns Policy</a></li>
+          <li><a href="contact.html">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Cozy Wraps. All rights reserved.</span>
+      <span><a href="privacy.html">Privacy</a> &nbsp;·&nbsp; <a href="terms.html">Terms</a> &nbsp;·&nbsp; <a href="contact.html">Contact</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    renderProductCards('products-container', products);
+  });
+</script>
+</body>
+</html>

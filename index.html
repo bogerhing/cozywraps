@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cozy Wraps — Luxury Blanket Store</title>
+  <meta name="description" content="Discover premium handcrafted blankets and throws. Ethically sourced, endlessly soft."/>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- ══ HEADER ══════════════════════════════════════════════ -->
+<header class="site-header">
+  <div class="container">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="Cozy Wraps Home">
+        <svg class="logo-icon" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="38" height="38" rx="9" fill="#8B5E3C"/>
+          <path d="M7 13 Q19 9 31 13 L31 27 Q19 31 7 27 Z" fill="#F5E6D0" opacity="0.95"/>
+          <path d="M7 17 Q19 13 31 17" stroke="#C4956A" stroke-width="1.4" fill="none"/>
+          <path d="M7 21 Q19 17 31 21" stroke="#C4956A" stroke-width="1.4" fill="none"/>
+          <path d="M7 25 Q19 21 31 25" stroke="#C4956A" stroke-width="1.4" fill="none"/>
+        </svg>
+        <span class="logo-text">Cozy Wraps</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html"        class="nav-link">Home</a>
+        <a href="shop.html"         class="nav-link">Shop</a>
+        <a href="new-arrivals.html" class="nav-link">New Arrivals</a>
+        <a href="about.html"        class="nav-link">About</a>
+        <a href="contact.html"      class="nav-link">Contact</a>
+      </nav>
+
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <nav class="mobile-nav" aria-label="Mobile navigation">
+    <a href="index.html"        class="nav-link">Home</a>
+    <a href="shop.html"         class="nav-link">Shop</a>
+    <a href="new-arrivals.html" class="nav-link">New Arrivals</a>
+    <a href="about.html"        class="nav-link">About</a>
+    <a href="contact.html"      class="nav-link">Contact</a>
+  </nav>
+</header>
+
+<!-- ══ HERO ════════════════════════════════════════════════ -->
+<main>
+<section class="hero">
+  <div class="hero-bg">
+    <svg viewBox="0 0 1440 820" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+      <rect width="1440" height="820" fill="#F0E6D3"/>
+      <!-- Large decorative blanket illustration -->
+      <defs>
+        <pattern id="heroPattern" x="0" y="0" width="48" height="48" patternUnits="userSpaceOnUse">
+          <rect width="48" height="48" fill="#E2CEAE"/>
+          <path d="M0 24 Q12 18 24 24 Q36 30 48 24" stroke="#C4956A" stroke-width="1.8" fill="none" opacity="0.4"/>
+          <path d="M0 0 Q12 -6 24 0 Q36 6 48 0" stroke="#C4956A" stroke-width="1.8" fill="none" opacity="0.25"/>
+          <path d="M0 48 Q12 42 24 48 Q36 54 48 48" stroke="#C4956A" stroke-width="1.8" fill="none" opacity="0.25"/>
+        </pattern>
+        <filter id="heroBlur"><feGaussianBlur stdDeviation="1"/></filter>
+      </defs>
+      <!-- Background wash -->
+      <rect width="1440" height="820" fill="url(#heroPattern)" opacity="0.5"/>
+      <!-- Big throw shape -->
+      <rect x="680" y="40" width="660" height="760" rx="40" fill="#DCC9A8" opacity="0.6" transform="rotate(-8 1010 420)"/>
+      <rect x="700" y="60" width="620" height="700" rx="32" fill="url(#heroPattern)" opacity="0.9" transform="rotate(-8 1010 420)"/>
+      <!-- Fringe lines on throw -->
+      <g transform="rotate(-8 1010 420)" opacity="0.55">
+        <line x1="700" y1="60" x2="700" y2="20" stroke="#C4956A" stroke-width="2"/>
+        <line x1="740" y1="60" x2="740" y2="20" stroke="#C4956A" stroke-width="2"/>
+        <line x1="780" y1="60" x2="780" y2="20" stroke="#C4956A" stroke-width="2"/>
+        <line x1="820" y1="60" x2="820" y2="20" stroke="#C4956A" stroke-width="2"/>
+        <line x1="860" y1="60" x2="860" y2="20" stroke="#C4956A" stroke-width="2"/>
+        <line x1="900" y1="60" x2="900" y2="20" stroke="#C4956A" stroke-width="2"/>
+        <line x1="940" y1="60" x2="940" y2="20" stroke="#C4956A" stroke-width="2"/>
+        <line x1="980" y1="60" x2="980" y2="20" stroke="#C4956A" stroke-width="2"/>
+        <line x1="1020" y1="60" x2="1020" y2="20" stroke="#C4956A" stroke-width="2"/>
+        <line x1="1060" y1="60" x2="1060" y2="20" stroke="#C4956A" stroke-width="2"/>
+        <line x1="1100" y1="60" x2="1100" y2="20" stroke="#C4956A" stroke-width="2"/>
+        <line x1="1140" y1="60" x2="1140" y2="20" stroke="#C4956A" stroke-width="2"/>
+        <line x1="1180" y1="60" x2="1180" y2="20" stroke="#C4956A" stroke-width="2"/>
+        <line x1="1220" y1="60" x2="1220" y2="20" stroke="#C4956A" stroke-width="2"/>
+        <line x1="1260" y1="60" x2="1260" y2="20" stroke="#C4956A" stroke-width="2"/>
+        <line x1="1300" y1="60" x2="1300" y2="20" stroke="#C4956A" stroke-width="2"/>
+      </g>
+      <!-- Soft circle accent -->
+      <circle cx="920" cy="400" r="280" fill="#C4956A" opacity="0.07"/>
+      <circle cx="200" cy="700" r="200" fill="#8B5E3C" opacity="0.05"/>
+    </svg>
+  </div>
+
+  <div class="container">
+    <div class="hero-content">
+      <span class="eyebrow">Handcrafted Comfort</span>
+      <h1>Wrap yourself in<br><em>effortless</em> warmth</h1>
+      <p class="hero-sub">Premium blankets and throws crafted from the world's finest natural fibers. Each piece is a quiet act of care.</p>
+      <div class="hero-actions">
+        <a href="shop.html" class="btn btn-primary">Shop Collection</a>
+        <a href="new-arrivals.html" class="btn btn-outline">New Arrivals</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FEATURES ═════════════════════════════════════════════ -->
+<section class="section" style="background:var(--mist)">
+  <div class="container">
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">🌿</div>
+        <h4>Ethically Sourced</h4>
+        <p>Every fiber is traced to its origin — from alpaca farms in Peru to merino ranches in New Zealand.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🧵</div>
+        <h4>Artisan Crafted</h4>
+        <p>Woven by skilled artisans who have spent decades perfecting their craft across generations.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">♻️</div>
+        <h4>Sustainably Made</h4>
+        <p>Low-impact dyes, zero-waste packaging, and carbon-neutral shipping on every order.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">✨</div>
+        <h4>Lifetime Quality</h4>
+        <p>Designed to soften and improve with every wash. These blankets become heirlooms.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FEATURED PRODUCTS ════════════════════════════════════ -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Bestsellers</span>
+      <h2>Our most-loved pieces</h2>
+      <p>Trusted by thousands of homes across the world. These are the blankets they keep coming back to.</p>
+    </div>
+    <div class="products-grid" id="products-container"></div>
+    <div class="text-center mt-24">
+      <a href="shop.html" class="btn btn-outline">View Full Collection</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ STORY BANNER ═════════════════════════════════════════ -->
+<section class="section" style="background:var(--bark);color:var(--cream)">
+  <div class="container" style="display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center;">
+    <div>
+      <span class="eyebrow" style="color:var(--sand)">Our Story</span>
+      <h2 style="color:var(--cream);margin-bottom:20px">Born from a love of slow, intentional living</h2>
+      <p style="color:rgba(250,246,239,0.75);line-height:1.8;margin-bottom:28px;font-size:0.95rem">
+        Cozy Wraps began in a small Edinburgh workshop in 2014. We believe that the objects we surround ourselves with at home should be beautiful, lasting, and honest — made by people who care, for people who care.
+      </p>
+      <a href="about.html" class="btn btn-ghost">Read Our Story</a>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+      <div style="background:rgba(255,255,255,0.06);border-radius:16px;padding:28px 24px;text-align:center;">
+        <div style="font-family:'Cormorant Garamond',serif;font-size:2.8rem;color:var(--sand);font-weight:300">10+</div>
+        <div style="font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(250,246,239,0.6);margin-top:4px">Years crafting</div>
+      </div>
+      <div style="background:rgba(255,255,255,0.06);border-radius:16px;padding:28px 24px;text-align:center;">
+        <div style="font-family:'Cormorant Garamond',serif;font-size:2.8rem;color:var(--sand);font-weight:300">50k+</div>
+        <div style="font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(250,246,239,0.6);margin-top:4px">Happy homes</div>
+      </div>
+      <div style="background:rgba(255,255,255,0.06);border-radius:16px;padding:28px 24px;text-align:center;">
+        <div style="font-family:'Cormorant Garamond',serif;font-size:2.8rem;color:var(--sand);font-weight:300">12</div>
+        <div style="font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(250,246,239,0.6);margin-top:4px">Fiber origins</div>
+      </div>
+      <div style="background:rgba(255,255,255,0.06);border-radius:16px;padding:28px 24px;text-align:center;">
+        <div style="font-family:'Cormorant Garamond',serif;font-size:2.8rem;color:var(--sand);font-weight:300">100%</div>
+        <div style="font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(250,246,239,0.6);margin-top:4px">Natural fibers</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ TESTIMONIALS ══════════════════════════════════════════ -->
+<section class="section" style="background:var(--mist)">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Reviews</span>
+      <h2>What our customers say</h2>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <p class="testimonial-text">I bought the Cashmere Whisper as a gift for my mother and she cried when she opened it. Worth every penny — it's unlike anything I've ever felt.</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">S</div>
+          <div>
+            <div class="testimonial-name">Sarah M.</div>
+            <div class="testimonial-stars">★★★★★</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <p class="testimonial-text">The Cable Knit Heritage is on its third year and still looks brand new. I've washed it probably 50 times. These are genuinely built to last.</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">J</div>
+          <div>
+            <div class="testimonial-name">James R.</div>
+            <div class="testimonial-stars">★★★★★</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <p class="testimonial-text">I've tried many "luxury" blanket brands but Cozy Wraps is the real deal. The Merino Honeycomb is just perfection — temperature-regulating and impossibly soft.</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">A</div>
+          <div>
+            <div class="testimonial-name">Amara K.</div>
+            <div class="testimonial-stars">★★★★★</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CTA ═══════════════════════════════════════════════════ -->
+<section class="section" style="background:var(--parchment);text-align:center;">
+  <div class="container" style="max-width:580px">
+    <span class="eyebrow">Stay Cozy</span>
+    <h2 style="margin-bottom:16px">Discover your perfect blanket</h2>
+    <p style="color:var(--sienna);margin-bottom:32px;font-size:0.95rem">Browse our full collection of premium throws, quilts, and wraps — all shipped in elegant, recyclable packaging.</p>
+    <a href="shop.html" class="btn btn-primary" style="font-size:0.9rem;padding:15px 36px">Explore the Shop</a>
+  </div>
+</section>
+
+</main>
+
+<!-- ══ PRODUCT MODAL ════════════════════════════════════════ -->
+<div class="modal-overlay" id="product-modal" role="dialog" aria-modal="true" aria-label="Product details">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeProductModal()" aria-label="Close">✕</button>
+    <div class="modal-body">
+      <div class="modal-image" id="modal-image"></div>
+      <div class="modal-details">
+        <h2 class="modal-product-name" id="modal-name"></h2>
+        <div class="modal-product-price" id="modal-price"></div>
+        <p class="modal-product-desc" id="modal-desc"></p>
+        <div class="modal-product-specs">
+          <div class="spec-row"><span class="spec-label">Material</span><span class="spec-value" id="modal-material"></span></div>
+          <div class="spec-row"><span class="spec-label">Size</span><span class="spec-value" id="modal-size"></span></div>
+          <div class="spec-row"><span class="spec-label">Care</span><span class="spec-value" id="modal-care"></span></div>
+        </div>
+        <div class="modal-actions">
+          <button class="btn btn-primary" onclick="openOrderModal()">Order Now</button>
+          <button class="btn btn-outline" onclick="closeProductModal()">Continue Browsing</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ ORDER MODAL ══════════════════════════════════════════ -->
+<div class="modal-overlay" id="order-modal" role="dialog" aria-modal="true" aria-label="Order status">
+  <div class="modal-box order-popup">
+    <button class="modal-close" onclick="closeOrderModal()" aria-label="Close">✕</button>
+    <div class="order-popup-icon">🛋️</div>
+    <h3>Currently Unavailable</h3>
+    <p>We appreciate your interest! Online ordering is temporarily unavailable while we upgrade our systems. Please <a href="contact.html" style="color:var(--sienna);font-weight:600">contact us</a> directly to place an order — we'd love to help you find the perfect piece.</p>
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+      <a href="contact.html" class="btn btn-primary">Contact Us</a>
+      <button class="btn btn-outline" onclick="closeOrderModal()">Close</button>
+    </div>
+  </div>
+</div>
+
+<!-- ══ FOOTER ═══════════════════════════════════════════════ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <svg class="logo-icon" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="38" height="38" rx="9" fill="#C4956A"/>
+            <path d="M7 13 Q19 9 31 13 L31 27 Q19 31 7 27 Z" fill="#FAF6EF" opacity="0.9"/>
+            <path d="M7 17 Q19 13 31 17" stroke="#8B5E3C" stroke-width="1.4" fill="none"/>
+            <path d="M7 21 Q19 17 31 21" stroke="#8B5E3C" stroke-width="1.4" fill="none"/>
+            <path d="M7 25 Q19 21 31 25" stroke="#8B5E3C" stroke-width="1.4" fill="none"/>
+          </svg>
+          <span class="logo-text">Cozy Wraps</span>
+        </a>
+        <p class="footer-tagline">Premium handcrafted blankets for the home you love. Sourced ethically. Made beautifully.</p>
+        <div class="footer-social">
+          <a href="contact.html" class="social-btn" aria-label="Instagram">IG</a>
+          <a href="contact.html" class="social-btn" aria-label="Facebook">FB</a>
+          <a href="contact.html" class="social-btn" aria-label="Pinterest">PT</a>
+          <a href="contact.html" class="social-btn" aria-label="Twitter">TW</a>
+        </div>
+      </div>
+
+      <div>
+        <h5 class="footer-col-title">Shop</h5>
+        <ul class="footer-links">
+          <li><a href="shop.html">All Blankets</a></li>
+          <li><a href="new-arrivals.html">New Arrivals</a></li>
+          <li><a href="shop.html">Throws &amp; Wraps</a></li>
+          <li><a href="shop.html">Quilts</a></li>
+          <li><a href="shop.html">Wool Collection</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h5 class="footer-col-title">Company</h5>
+        <ul class="footer-links">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">Sustainability</a></li>
+          <li><a href="about.html">Our Artisans</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h5 class="footer-col-title">Legal</h5>
+        <ul class="footer-links">
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms &amp; Conditions</a></li>
+          <li><a href="contact.html">Returns Policy</a></li>
+          <li><a href="contact.html">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2025 Cozy Wraps. All rights reserved.</span>
+      <span>
+        <a href="privacy.html">Privacy</a> &nbsp;·&nbsp;
+        <a href="terms.html">Terms</a> &nbsp;·&nbsp;
+        <a href="contact.html">Contact</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+  // Home page: show bestsellers (first 6)
+  document.addEventListener('DOMContentLoaded', () => {
+    const bestsellers = products.filter(p => p.badgeClass === 'best').concat(
+      products.filter(p => p.badgeClass !== 'best')
+    ).slice(0, 6);
+    renderProductCards('products-container', bestsellers);
+  });
+</script>
+</body>
+</html>
